@@ -6,4 +6,5 @@ import spring.validation.entity.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Integer> {
+    User findByUserId(int userId);
 }
